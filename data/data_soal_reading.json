@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "huruf": "ᮃ",
+    "latin": "a",
+    "gambar": "a.png"
+  },
+  {
+    "id": 2,
+    "huruf": "ᮘ",
+    "latin": "ba",
+    "gambar": "ba.png"
+  },
+  {
+    "id": 3,
+    "huruf": "ᮞ",
+    "latin": "sa",
+    "gambar": "sa.png"
+  },
+  {
+    "id": 4,
+    "huruf": "ᮓ",
+    "latin": "da",
+    "gambar": "da.png"
+  },
+  {
+    "id": 5,
+    "huruf": "ᮔ",
+    "latin": "na",
+    "gambar": "na.png"
+  },
+  {
+    "id": 6,
+    "huruf": "ᮠ",
+    "latin": "ha",
+    "gambar": "ha.png"
+  },
+  {
+    "id": 7,
+    "huruf": "ᮛ",
+    "latin": "ra",
+    "gambar": "ra.png"
+  },
+  {
+    "id": 8,
+    "huruf": "ᮙ",
+    "latin": "ma",
+    "gambar": "ma.png"
+  }
+]

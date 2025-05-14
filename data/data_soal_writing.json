@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "kalimat": "abdi ka sakola",
+    "correct_sentence": ["abdi", "ka", "sakola"]
+  },
+  {
+    "id": 2,
+    "kalimat": "manehna nuju dahar",
+    "correct_sentence": ["manehna", "nuju", "dahar"]
+  },
+  {
+    "id": 3,
+    "kalimat": "urang badé ka pasar",
+    "correct_sentence": ["urang", "badé", "ka", "pasar"]
+  },
+  {
+    "id": 4,
+    "kalimat": "maranéhanana keur diajar",
+    "correct_sentence": ["maranéhanana", "keur", "diajar"]
+  },
+  {
+    "id": 5,
+    "kalimat": "bapa angkat ka kebon",
+    "correct_sentence": ["bapa", "angkat", "ka", "kebon"]
+  },
+  {
+    "id": 6,
+    "kalimat": "indung masak sangu",
+    "correct_sentence": ["indung", "masak", "sangu"]
+  },
+  {
+    "id": 7,
+    "kalimat": "murid maca buku",
+    "correct_sentence": ["murid", "maca", "buku"]
+  },
+  {
+    "id": 8,
+    "kalimat": "aku resep ka anjeun",
+    "correct_sentence": ["aku", "resep", "ka", "anjeun"]
+  },
+  {
+    "id": 9,
+    "kalimat": "budak keur ulin",
+    "correct_sentence": ["budak", "keur", "ulin"]
+  },
+  {
+    "id": 10,
+    "kalimat": "sagala nu diomongkeun nyaeta bener",
+    "correct_sentence": ["sagala", "nu", "diomongkeun", "nyaeta", "bener"]
+  }
+]

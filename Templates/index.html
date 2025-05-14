@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Belajar Bahasa Sunda</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Selamat Datang di Aplikasi Belajar Sunda</h1>
+      <p>Pilih jenis latihan:</p>
+      <ul>
+        <li><a href="{{ url_for('reading') }}">Latihan Membaca</a></li>
+        <li><a href="{{ url_for('writing') }}">Latihan Menulis</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

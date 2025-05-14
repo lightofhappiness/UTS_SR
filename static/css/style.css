@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#user-sentence {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Pastikan setiap baris ditampilkan blok 
+.row {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+*/
+/* Agar tombol dalam baris 1 tersusun rapi */
+#kata-random button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
