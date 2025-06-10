@@ -2,28 +2,25 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Latihan Membaca Huruf</title>
+    <title>Latihan Membaca</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/re-style.css') }}"
     />
   </head>
-
   <body>
     <nav>
-      <a href="{{ url_for('home') }}">
-        <button>🏠 Kembali ke Home</button>
-      </a>
+      <a href="{{ url_for('index') }}">🏠 Home</a>
     </nav>
+    <div class="container">
+      <h2>Latihan Membaca</h2>
+      <p id="sentence">Klik tombol di bawah untuk mendengarkan kalimat.</p>
+      <h2>Huruf Aksara Sunda:</h2>
+      <div id="huruf">{{ huruf }}</div>
+      <button onclick="playTTS()">🔊 Dengarkan</button>
+      <button onclick="startRecording()">🎤 Ucapkan</button>
+      <button onclick="submitRecording()">📤 Kirim</button>
 
-    <h2>Latihan Membaca</h2>
-    <p>Ucapkan huruf berikut:</p>
-    <div id="huruf">{{ huruf }}</div>
-
-    <button onclick="mulaiRekam()">🎤 Ucapkan Huruf</button>
-
-    <div>
-      <p><strong>Hasil:</strong> <span id="hasil"></span></p>
       <p id="feedback"></p>
     </div>
     <script src="{{ url_for('static', filename='js/reading.js') }}"></script>

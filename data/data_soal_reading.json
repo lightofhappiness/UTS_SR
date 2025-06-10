@@ -2,41 +2,81 @@
   {
     "id": 1,
     "huruf": "ᮃ",
+<<<<<<< HEAD
     "latin": "a"
+=======
+    "latin": "a",
+    "gambar": "a.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   },
   {
     "id": 2,
     "huruf": "ᮘ",
+<<<<<<< HEAD
     "latin": "ba"
+=======
+    "latin": "ba",
+    "gambar": "ba.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   },
   {
     "id": 3,
     "huruf": "ᮞ",
+<<<<<<< HEAD
     "latin": "sa"
+=======
+    "latin": "sa",
+    "gambar": "sa.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   },
   {
     "id": 4,
     "huruf": "ᮓ",
+<<<<<<< HEAD
     "latin": "da"
+=======
+    "latin": "da",
+    "gambar": "da.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   },
   {
     "id": 5,
     "huruf": "ᮔ",
+<<<<<<< HEAD
     "latin": "na"
+=======
+    "latin": "na",
+    "gambar": "na.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   },
   {
     "id": 6,
     "huruf": "ᮠ",
+<<<<<<< HEAD
     "latin": "ha"
+=======
+    "latin": "ha",
+    "gambar": "ha.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   },
   {
     "id": 7,
     "huruf": "ᮛ",
+<<<<<<< HEAD
     "latin": "ra"
+=======
+    "latin": "ra",
+    "gambar": "ra.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   },
   {
     "id": 8,
     "huruf": "ᮙ",
+<<<<<<< HEAD
     "latin": "ma"
+=======
+    "latin": "ma",
+    "gambar": "ma.png"
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
   }
 ]

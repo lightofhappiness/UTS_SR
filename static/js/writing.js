@@ -21,6 +21,7 @@ function updateHasil() {
   document.getElementById('hasil').innerText = jawaban.join(' ');
 }
 
+<<<<<<< HEAD
 function bacaSusunan() {
   const hasilElement = document.getElementById('hasil');
   const kalimat = hasilElement.textContent.trim();
@@ -34,6 +35,8 @@ function bacaSusunan() {
   }
 }
 
+=======
+>>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
 function cekJawaban() {
   const questionId = parseInt(document.body.dataset.questionId);
 
