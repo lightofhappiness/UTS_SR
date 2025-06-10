@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "huruf": "ᮃ",
+    "latin": "a"
+  },
+  {
+    "id": 2,
+    "huruf": "ᮘ",
+    "latin": "ba"
+  },
+  {
+    "id": 3,
+    "huruf": "ᮞ",
+    "latin": "sa"
+  },
+  {
+    "id": 4,
+    "huruf": "ᮓ",
+    "latin": "da"
+  },
+  {
+    "id": 5,
+    "huruf": "ᮔ",
+    "latin": "na"
+  },
+  {
+    "id": 6,
+    "huruf": "ᮠ",
+    "latin": "ha"
+  },
+  {
+    "id": 7,
+    "huruf": "ᮛ",
+    "latin": "ra"
+  },
+  {
+    "id": 8,
+    "huruf": "ᮙ",
+    "latin": "ma"
+  }
+]

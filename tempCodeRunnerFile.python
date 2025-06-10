@@ -1,0 +1,58 @@
+import pandas as pd
+from pulp import  LpProblem, LpMinimize, LpVariable, lpSum, LpBinary, PULP_CBC_CMD
+
+
+# Data dasar
+days = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"]
+shifts = ["Pagi", "Sore"]
+
+# Data karyawan: nama -> (role, level, gaji per shift)
+employees = {
+    **{f'KS{i}': ('Dapur', 'Senior', 130000) for i in range(1, 5)},
+    **{f'KJ{i}': ('Dapur', 'Junior',  80000) for i in range(1, 5)},
+    **{f'SS{i}': ('Staf',  'Senior', 130000) for i in range(1, 4)},
+    **{f'SJ{i}': ('Staf',  'Junior',  80000) for i in range(1, 6)},
+}
+
+# Permintaan minimal per shift per hari
+demand = {}
+for d in days:
+    for s in shifts:
+        is_weekday = d in days[:4]
+        demand.update({
+            (d, s, 'Dapur', 'Senior'): 1 if is_weekday else 2,
+            (d, s, 'Dapur', 'Junior'): 1 if is_weekday else 2,
+            (d, s, 'Staf',  'Senior'): 1,
+            (d, s, 'Staf',  'Junior'): 1 if is_weekday else 2,
+        })
+
+# Model
+model = LpProblem("Penjadwalan", LpMinimize)
+
+# Variabel keputusan
+x = LpVariable.dicts("x", [(e,d,s) for e in employees for d in days for s in shifts], cat=LpBinary)
+
+# Fungsi objektif
+model += lpSum(x[(e,d,s)] * employees[e][2] for e,d,s in x), "Total_Biaya"
+
+# Kendala permintaan per shift
+for (d,s,r,l), jumlah in demand.items():
+    model += lpSum(x[(e,d,s)] for e in employees if employees[e][:2]==(r,l)) >= jumlah
+
+# Kendala maksimum 5 shift per minggu per karyawan
+for e in employees:
+    model += lpSum(x[(e,d,s)] for d in days for s in shifts) <= 5
+
+# Optimasi
+model.solve(PULP_CBC_CMD(msg=0))
+
+# Hasil jadwal
+jadwal = [
+    {'Karyawan': e, 'Role': r, 'Level': l, 'Hari': d, 'Shift': s}
+    for (e,d,s), var in x.items() if var.value() == 1
+    for r, l, _ in [employees[e]]
+]
+
+# Tampilkan jadwal
+df = pd.DataFrame(jadwal).sort_values(['Karyawan','Hari','Shift'])
+print(df.to_string(index=False))

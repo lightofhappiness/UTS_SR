@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Latihan Menulis</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/wr-style.css') }}"
+    />
+  </head>
+
+  <body data-question-id="{{ id }}">
+    <nav>
+      <a href="{{ url_for('home') }}">
+        <button>🏠 Kembali ke Home</button>
+      </a>
+    </nav>
+
+    <h2>Susun kalimat dari kata berikut:</h2>
+
+    <div id="kata-random">
+      {% for k in kata %}
+      <button onclick="pilihKata(this)">{{ k }}</button>
+      {% endfor %}
+    </div>
+
+    <p><strong>Susunan Anda:</strong> <span id="hasil"></span></p>
+    <div id="hasil"></div>
+    <button onclick="cekJawaban()">Cek Jawaban</button>
+    <button onclick="reset()">Reset</button>
+    <p id="feedback"></p>
+
+    <script src="{{ url_for('static', filename='js/writing.js') }}"></script>
+  </body>
+</html>

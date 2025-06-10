@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Latihan Membaca Huruf</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/re-style.css') }}"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <a href="{{ url_for('home') }}">
+        <button>🏠 Kembali ke Home</button>
+      </a>
+    </nav>
+
+    <h2>Latihan Membaca</h2>
+    <p>Ucapkan huruf berikut:</p>
+    <div id="huruf">{{ huruf }}</div>
+
+    <button onclick="mulaiRekam()">🎤 Ucapkan Huruf</button>
+
+    <div>
+      <p><strong>Hasil:</strong> <span id="hasil"></span></p>
+      <p id="feedback"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/reading.js') }}"></script>
+  </body>
+</html>
