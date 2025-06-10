@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh; /* agar tinggi body memenuhi viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikal */
+  align-items: center; /* Horizontal */
+  text-align: center;
+}
+
+.baris {
+  margin: 20px 0;
+}
+
+#kata-random {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#kata-random button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#hasil {
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#feedback {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+nav {
+  background-color: #f0f0f0;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}

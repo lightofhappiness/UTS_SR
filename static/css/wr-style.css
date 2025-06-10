@@ -1,18 +1,5 @@
 body {
   font-family: sans-serif;
-<<<<<<< HEAD
-  margin: 0;
-  height: 100vh; /* agar tinggi body memenuhi viewport */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertikal */
-  align-items: center;     /* Horizontal */
-  text-align: center;
-}
-
-.baris {
-  margin: 20px 0;
-=======
   padding: 50px;
   text-align: center;
   justify-content: center; /* Horizontal center */
@@ -22,13 +9,11 @@ body {
 .baris {
   display: block;
   margin: 20px 0; /* margin vertikal untuk memisahkan setiap baris */
->>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
 }
 
 #kata-random {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -48,29 +33,6 @@ button {
   font-size: 18px;
   cursor: pointer;
   margin: 5px;
-=======
-  justify-content: center; /* Center tombol di baris pertama */
-}
-
-#kata-random div {
-  margin: 5px; /* Spasi antar div (termasuk tombol) */
-}
-
-#kata-random button {
-  padding: 10px 20px; /* Vertical padding tetap 10px dan horizontal 20px */
-  font-size: 16px;
-  display: inline-block; /* Supaya tombol tetap inline */
-}
-
-#hasil {
-  margin-top: 20px; /* Spasi atas untuk hasil */
-}
-
-button {
-  padding: 12px 30px; /* Tombol lebih besar */
-  font-size: 18px;
-  cursor: pointer;
->>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
 }
 
 #feedback {
@@ -82,13 +44,10 @@ button {
 nav {
   background-color: #f0f0f0;
   padding: 10px;
-<<<<<<< HEAD
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-=======
->>>>>>> f27c5e6accb667ea705e33dcd8a2a82ba6bd3f9c
 }
 
 nav a {
